@@ -1,0 +1,108 @@
+/*Header*/
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    nav {
+        height: 17%;
+        width: 100%;
+        padding: 26px 3.6% 0 0;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+
+        .logo-header {
+            margin-left: 6.9%;
+            }
+
+        .principal-nav {
+            width: 50%;
+            text-align: right;
+
+            a {
+                color: $primaryTextColor;
+                letter-spacing: 0;
+                line-height: 28px;
+                margin-right: 3.3%;
+                text-decoration: none;
+            }
+
+                a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .text-header {
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: flex-end;
+        flex-direction: column;
+        overflow: hidden;
+
+        h1, p {
+            width: 100%;
+            height: auto;
+            text-align: left;
+            padding-left: 13.9%;
+            font-family: $primaryFont;
+            font-size: 4rem;
+            color: $primaryTextColor;
+            letter-spacing: 0;
+
+            span {
+                color: #0000EC;
+            }
+            
+        }
+
+        p {
+            max-width: 628px;
+            font-family: $secondaryFont;
+            font-size: 1em;
+            line-height: 24px;
+        }
+
+        .container-button {
+            margin: 8% 0 0.5% 13.9%;
+
+            .header-button {
+                height: 56px;
+                width: 226px;
+                justify-content: center;
+                font-family: $secondaryFont;
+                font-size: 18px;
+                color: $primaryTextColor;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 24px;
+                background-color: $backGruondButtonColor;
+                border: 0px;
+            }
+        }
+    }
+}
+/*header end*/
+
+/*Responsive max 600px*/
+@media screen and (max-width: 600px) {
+    header{
+
+        .text-header {
+
+            h1 {
+                padding-left: 5%;
+                font-size: 50px;
+                line-height: 42px;
+            }
+        }
+    }
+/*Responsive max 600px end*/
+
+
+
+
+// font: 600 16px 'IBM Plex Mono', monospace;

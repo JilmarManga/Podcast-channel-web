@@ -1,0 +1,123 @@
+/*Episodes*/
+.episodes {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Imagenes/fondo-episodios.jpg);
+    // background: no-repeat;
+    // overflow: hidden;
+
+    h2 {
+    //     height: 200px;
+        padding-top: 13%;
+        color: $secundaryTextColor;
+        font-family: $primaryFont;
+        font-weight: 300;
+        font-size: 48px;
+    //     // text-align: end;
+    //     // padding-top: ;
+    }
+
+    .container {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 600px 200px;
+        // gap: 10px;
+
+        .episode-galery {
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: auto auto auto auto;
+            column-gap: 4.3%;
+
+            .episode-image {
+                width: 584px;
+                height: auto;
+            }
+
+            .episode-image:nth-child(1) {
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+
+            .episode-image:nth-child(2) {
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 3;
+                grid-column-end: 4;
+                align-items: flex-end;
+            }
+
+            .episode-image:nth-child(3) {
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+
+            .episode-image:nth-child(4) {
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 3;
+                grid-column-end: 4;
+            }
+        }
+    }
+}
+/*Episodes end*/
+
+@media screen and (max-width: 600px) {
+    .episodes {
+        background: blue;
+    
+        h2 {
+            padding: 13% 0 0 5%;
+            color: $secundaryTextColor;
+            text-align: left;
+            font-size: 36px;
+        }
+    
+        .container {
+            display: flex;
+            height: auto;
+            width: 100%;
+    
+            .episode-galery {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+    
+                .episode-image {
+                    width: 93%;
+                    height: 250px;
+
+                    iframe {
+                        width: 100%;
+                        height: 95%;
+                    }
+                }
+    
+                .episode-image:nth-child(1) {
+                }
+    
+                .episode-image:nth-child(2) {
+                }
+    
+                .episode-image:nth-child(3) {
+                }
+    
+                .episode-image:nth-child(4) {
+                    margin-bottom: 50%;
+                }
+            }
+        }
+    }
+
+}

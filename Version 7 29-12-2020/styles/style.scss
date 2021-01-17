@@ -1,0 +1,77 @@
+/*Variables*/
+
+//colors
+@import "colors";
+
+//fonts
+@import "textFonts";
+
+/*Variables end*/
+
+
+/*Generals*/
+* {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    color: $primaryTextColor;
+    font-size: 48px;
+    text-align: left;
+    margin-bottom: 0.5em;
+    padding-left: 13.9%;
+}
+
+h2 {
+    font-family: $primaryFont;
+    font-size: 48px;
+    color: $primaryTextColor;
+    letter-spacing: 0;
+}
+
+/*Body*/
+body {
+    height: auto;
+
+    /*Header*/
+    @import "header";
+    /*header end*/
+
+    /*main*/
+    main {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        /*Episodes*/
+        @import "episodes";
+
+        /*De donde venimos*/
+        @import "deDondeVenimos";
+
+        /*Invitados*/
+        @import "invitados";
+
+        /*Algunos de nuestros temas*/
+        @import "temas";
+        
+        /*Quieres las ultimas novedades*/
+        @import "ultimasNovedades";
+        
+    }
+    /*main end*/
+    
+    /*Footer*/
+    @import "footer";
+    /*Footer end*/
+
+}
+/*Body end*/               
+
+
+
+

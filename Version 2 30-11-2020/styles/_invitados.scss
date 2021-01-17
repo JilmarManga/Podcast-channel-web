@@ -1,0 +1,35 @@
+/*Invitados*/
+
+.invitados {
+    padding-top: 4.4rem;
+
+    .invitados-container {
+        display: flex;
+        flex-direction: column;
+
+        // h2 {
+        //     // font-family: ;
+        //     font-size: 48px;
+        //     color: $primaryTextColor;
+        //     letter-spacing: 0;
+        // }
+
+        .invitados-galery {
+            padding-top: 1rem;
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: auto auto auto;
+
+            .invitados-image {
+                width: 100%;
+                height: 22.75rem;
+
+                img {
+                    width: 100%;
+                    height: 22.75rem;
+                }
+            }
+        }
+    }
+}
+/*Invitados end*/

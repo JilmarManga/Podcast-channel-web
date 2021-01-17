@@ -1,0 +1,326 @@
+// Variables
+
+    //colors
+$primaryTextColor:  #060A24;
+$secundaryTextColor: #ffffff;
+$backGruondSectionColor: #0000A3;
+$backGruondButtonColor: #00F3BB;
+
+    //fonts
+$primaryFont: IBMplexSans;
+$secondaryFont: IBMPlexMono;
+
+//Variables end
+
+/*Generals*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    color: $primaryTextColor;
+    font-size: 48px;
+    text-align: left;
+    margin-bottom: 0.5em;
+    padding-left: 13.9%;
+}
+
+h2 {
+    // font-family: ;
+    font-size: 48px;
+    color: $primaryTextColor;
+    letter-spacing: 0;
+}
+/*Generals end*/
+
+/*Body*/
+body {
+    height: auto;
+
+    /*Header*/
+    header {
+        width: 100%;
+        height: 450px;
+        // background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+
+        nav {
+            height: 17%;
+            width: 100%;
+            padding: 26px 3.6% 0 0;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+
+            .logo-header {
+                margin-left: 6.9%;
+                }
+
+            .principal-nav {
+                width: 50%;
+                text-align: right;
+
+                a {
+                    color: $primaryTextColor;
+                    letter-spacing: 0;
+                    line-height: 28px;
+                    margin-right: 3.3%;
+                    text-decoration: none;
+                }
+
+                    a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .text-header {
+            display: flex;
+            height: 83%;
+            width: 100%;
+            justify-content: flex-end;
+            flex-direction: column;
+            overflow: hidden;
+
+            h1, p {
+                width: 100%;
+                height: 70px;
+                text-align: left;
+                padding-left: 13.9%;
+                // font-family: IBMPlexSans;
+                font-size: 64px;
+                color: $primaryTextColor;
+                letter-spacing: 0;
+            }
+
+            p {
+                // font-family: IBMPlexMono;
+                height: 25px;
+                font-size: 1em;
+                line-height: 24px;
+            }
+
+            .container-button {
+                margin: 8% 0 0.5% 13.9%;
+
+                .header-button {
+                    height: 56px;
+                    width: 226px;
+                    justify-content: center;
+                    // font-family: IBMPlexMono-Medium;
+                    font-size: 18px;
+                    color: $primaryTextColor;
+                    letter-spacing: 0;
+                    text-align: center;
+                    line-height: 24px;
+                    background-color: $backGruondButtonColor;
+                    border: 0px;
+                }
+            }
+        }
+    }
+    /*header end*/
+
+    /*main*/
+    main {
+        width: 100%;
+        height: 1042px;
+        display: flex;
+        flex-direction: column;
+
+        /*Episodes*/
+        .episodes {
+            height: 1000px;
+            width: 100%;
+            background-color: background-image { linear-gradient: (225deg, #0000FF 0%, #0000A3 100%)}
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+            //     height: 200px;
+                padding-top: 10%;
+            //     // text-align: end;
+            //     // padding-top: ;
+            }
+
+            .container {
+                // height: 800%;
+                width: 100%;
+                display: grid;
+                grid-template-rows: 600px 200px;
+                // gap: 10px;
+
+                .episode-galery {
+                    width: 100%;
+                    display: grid;
+                    grid-template-rows: auto auto;
+                    grid-template-columns: auto auto auto auto;
+                    column-gap: 4.3%;
+
+                    .episode-image {
+                        width: 584px;
+                        height: 232px;
+                    }
+
+                    .episode-image:nth-child(1) {
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                    }
+
+                    .episode-image:nth-child(2) {
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        grid-column-start: 3;
+                        grid-column-end: 4;
+                        align-items: flex-end;
+                    }
+
+                    .episode-image:nth-child(3) {
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                    }
+
+                    .episode-image:nth-child(4) {
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                        grid-column-start: 3;
+                        grid-column-end: 4;
+                    }
+                }
+            }
+        }
+        /*Episodes end*/
+
+        /*De donde venimos*/
+        .de-donde-venimos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .imagen-de-donde-venimos{
+                width: 457.6px;
+                height: 660px;
+                margin: -185px 0 0 180px;
+            }
+
+            .cont-texto-de-donde-venimos{
+                padding: 2em 12em 0 4em;
+
+                // h2 {
+                //     // font-family: ;
+                //     font-size: 3em;
+                //     color: $primaryTextColor;
+                //     letter-spacing: 0;
+                // }
+
+                p {
+                    // font-family: ;
+                    font-size: 1em;
+                    color: $primaryTextColor;
+                    letter-spacing: 0;
+                    line-height: 1.5em;
+
+                }
+            }
+        }
+        /*De donde venimos end*/
+
+        /*Invitados*/
+        .invitados {
+            padding-top: 4.4rem;
+
+            .invitados-container {
+                display: flex;
+                flex-direction: column;
+
+                // h2 {
+                //     // font-family: ;
+                //     font-size: 48px;
+                //     color: $primaryTextColor;
+                //     letter-spacing: 0;
+                // }
+
+                .invitados-galery {
+                    padding-top: 1rem;
+                    display: grid;
+                    grid-template-rows: auto auto;
+                    grid-template-columns: auto auto auto;
+
+                    .invitados-image {
+                        width: 100%;
+                        height: 22.75rem;
+
+                        img {
+                            width: 100%;
+                            height: 22.75rem;
+                        }
+                    }
+                }
+            }
+        }
+        /*Invitados end*/
+
+        /*Algunos de nuestros clientes*/
+        .temas {
+            display: flex;
+            flex-direction: column;
+            padding: 4.4rem 0 4.4rem 0;
+
+            // h2 {
+
+            // }
+
+            .temas-container {
+                padding: 2rem 11rem 0 11rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+
+                .temas-illustration-container {
+
+                    .temas-illustration {
+                        text-align: center;
+
+                    }
+                }
+            }
+        }
+        /*Algunos de nuestros clientes end*/
+
+        /*Quieres las ultimas novedades*/
+        .ultimas-novedades {
+            text-align: center;
+            background-color: azul;
+
+            h2 {
+                color: $secundaryTextColor;
+            }
+
+            .ultimas-novedades-button {
+                margin-top: 3rem;
+                width: 21.5rem;
+                height: 3.5rem;
+                font-size: 18px;
+                color: $primaryTextColor;
+                letter-spacing: 0;
+                text-align: center;
+                line-height: 24px;
+                background-color: $backGruondButtonColor;
+                border: 0px;
+            }
+        }
+        /*Quieres las ultimas novedades end*/
+    }
+    /*main end*/
+
+}
+/*Body end*/
+
+
+
+

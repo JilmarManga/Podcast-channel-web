@@ -1,0 +1,33 @@
+/*De donde venimos*/
+.de-donde-venimos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .de-donde-venimos-image{
+        width: 457.6px;
+        height: 660px;
+        margin: -185px 0 0 180px;
+    }
+
+    .container-text-de-donde-venimos{
+        padding: 2em 12em 0 4em;
+
+        h2 {
+            // font-family: ;
+            font-size: 3em;
+            color: $primaryTextColor;
+            letter-spacing: 0;
+            padding-left: 0%;
+        }
+
+        p {
+            // font-family: ;
+            font-size: 1em;
+            color: $primaryTextColor;
+            letter-spacing: 0;
+            line-height: 1.5em;
+
+        }
+    }
+}
+/*De donde venimos end*/
