@@ -785,8 +785,8 @@ body footer .footer-container {
 body footer .footer-container h4 {
   width: 50%;
   margin: 1% 0 0 5%;
-  font-family: #ffffff;
-  font-size: 1.5rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
   color: #060A24;
   letter-spacing: 0;
   line-height: 1.7rem;
