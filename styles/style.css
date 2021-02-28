@@ -366,6 +366,12 @@ body main .episodes .container .episode-galery .episode-image {
   height: auto;
 }
 
+body main .episodes .container .episode-galery .episode-image iframe {
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+}
+
 body main .episodes .container .episode-galery .episode-image:nth-child(1) {
   -ms-grid-row: 1;
       grid-row-start: 1;
