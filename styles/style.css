@@ -292,38 +292,6 @@ body header .text-header .container-button .header-button:hover {
   }
 }
 
-@media screen and (max-width: 600px) {
-  body label {
-    display: block;
-  }
-  body .icon-menu, body .toggle {
-    position: absolute;
-  }
-  body .icon-menu {
-    display: inherit;
-  }
-  body #btn-menu {
-    display: block;
-    opacity: 0;
-  }
-  body .toggle {
-    display: none;
-  }
-  body #btn-menu:checked ~ .menu {
-    -webkit-transition: all 500ms ease;
-    transition: all 500ms ease;
-    margin-top: 49px;
-    width: 100%;
-  }
-  body #btn-menu:checked ~ .toggle {
-    display: inherit;
-    z-index: -1;
-  }
-  body #btn-menu:checked ~ label {
-    opacity: 0;
-  }
-}
-
 body main {
   width: 100%;
   height: auto;
@@ -500,6 +468,7 @@ body main .de-donde-venimos .container-text-de-donde-venimos {
 }
 
 body main .de-donde-venimos .container-text-de-donde-venimos h2 {
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 3em;
   color: #060A24;
   letter-spacing: 0;
@@ -507,6 +476,7 @@ body main .de-donde-venimos .container-text-de-donde-venimos h2 {
 }
 
 body main .de-donde-venimos .container-text-de-donde-venimos p {
+  font-family: "IBM Plex Mono", monospace;
   font-size: 1em;
   color: #060A24;
   letter-spacing: 0;
